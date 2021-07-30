@@ -1,0 +1,21 @@
+#include "structs.h"
+tree_t *create_t_node(char word[]);
+int tree_insert(tree_t **root, tree_t *node);
+int build_tree(tree_t **root, char filename[]);
+void print_tree(tree_t *root, int space);
+void infix_print_tree(tree_t *tr_node);
+tree_t *delete_tree(tree_t **root, tree_t *deleted, int *if_c);
+tree_t *leftest_in_right(tree_t *root);
+tree_t *us_tree_delete(tree_t **root, tree_t *node, char word[]);
+int height(tree_t *node);
+int b_factor(tree_t *node);
+void fixheight(tree_t *node);
+tree_t *rotate_right(tree_t *node);
+tree_t *rotate_left(tree_t *node);
+tree_t *balance( tree_t *node);
+tree_t *balance_insert(tree_t *node, char word[], tree_t *prnt);
+int build_balanced_tree(tree_t **root, char filename[]);
+tree_t *find_root(tree_t *node);
+tree_t *rec_delete(tree_t **root, tree_t *node, char word[], int *if_c);
+tree_t *tree_search(tree_t *root, char word[], int *if_c);
+void destruct_tree(tree_t *root);

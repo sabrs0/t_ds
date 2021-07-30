@@ -1,0 +1,13 @@
+int input_vector(int *len_v, char filename[], int *non_zero_els);
+int init_vector(int len_v, matr_t *vector, char filename[], int non_zero_els);
+int generate_usual_vector(usual_matr_t *vector);
+int generate_vector(int *len_v, char filename[], int *non_zero_els);
+int input_matr(int *rows, int *cols, char filename[], int *non_zero_els);
+int generate_usual_matr(usual_matr_t *matrix);
+int generate_matr(int *rows, int *cols, char filename[], int *non_zero_els);
+int init_matr(int rows, int cols, matr_t *matrix, char filename[], int non_zero_els);
+void print_razr_matr(matr_t matrix);
+void print_razr_vect(matr_t matrix);
+int input_usual_matr(usual_matr_t *matr_str);
+int input_usual_vect(usual_matr_t *vect_str);
+void print_usual_matr(usual_matr_t matr);

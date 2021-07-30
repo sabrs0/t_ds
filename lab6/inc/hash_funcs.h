@@ -1,0 +1,13 @@
+int find_prost_fig(int current);
+void destruct_tab(hash_table_t *table);
+int hash_usual(char *word, int n);
+hash_node_t *create_h_node(char word[]);
+int push_h(hash_table_t *table, char *word, int coll_max, int (*hash)( char *word, int length));
+int create_hash_table( hash_table_t **table, int len);
+int restruct_tab(hash_table_t **table, int new_len, int (*hash)( char *word, int length));
+int delete_h(hash_table_t *table, char word[], int (*hash)( char *word, int length), int *if_c);
+int search_h(hash_table_t *table, char word[], int (*hash)( char *word, int length));
+void print_table(hash_table_t *table, int coll_max);
+int hash_t_input(hash_table_t **table, char filename[], int *flag_safe, int tab_len, int coll_max);
+int hash_safe(char *word, int n);
+int hash_t_input_data(int *tab_len, int *coll_max);
